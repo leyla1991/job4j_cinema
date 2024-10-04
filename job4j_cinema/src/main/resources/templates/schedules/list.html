@@ -9,9 +9,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
+    <style>
+        .myLink {
+         text-decoration: none;
+        }
+        .myLink:hover {
+         text-decoration: underline;
+        }
+    </style>
+
     <title>Кинотеатр "Job4j"</title>
 </head>
 <body>
+<div class="container-fluid p-0">
+<header th:insert="blocks/header :: header"></header>
 <div class="container">
     <div class="row">
         <table class="table">
@@ -19,19 +30,27 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Название</th>
+                <th scope="col">Зал показа</th>
+                <th scope="col">Время показа</th>
+                <th scope="col">Конец показа</th>
+                <th scope="col">Цена</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="schedule: ${schedules}">
-                <td th:text="${schedule.id}" />
-                <td th:text="${schedule.name}" />
-                <td th:text="${schedule.description}" />
-                <td th:text="${schedule.create}" />
+                <td>
+                    <img th:src="@{/files/{fileId}(fileId=*{schedule.film.fileId})}" class="w-25" alt="No image">
+                </td>
+                <td><a class="myLink" th:href="@{schedules/{id}(id=${schedule.id})}" th:text="${schedule.film.name}"></a>
+                <td th:text="${schedule.halls.name}" />
+                <td th:text="${{schedule.startId}}" />
+                <td th:text="${{schedule.endTime}}" />
+                <td th:text="${schedule.price}" />
             </tr>
             </tbody>
         </table>
     </div>
 </div>
-
+</div>
 </body>
 </html>

@@ -13,38 +13,16 @@
     <title>Кинотеатр Джобчик</title>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Фильм</th>
-                <th scope="col">Релиз</th>
-                <th scope="col">Время показа</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Джавист на прогулке</td>
-                <td>2 августа</td>
-                <td>1 час</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Джавист в ужасе</td>
-                <td>28 июля</td>
-                <td>2 часа</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Джавист влюблен</td>
-                <td>5 августа</td>
-                <td>4 августа</td>
-            </tr>
-            </tbody>
-        </table>
+<div class="container-fluid p-0">
+    <header th:insert="blocks/header :: header"></header>
+    <div class="container mt-2">
+        <h3>Проект кинотеатр</h3>
+        <ul>
+            <li><a th:href="@{/schedules}">Расписание</a></li>
+            <li><a th:href="@{/films}">Фильмы</a></li>
+            <li><a th:href="@{/users/login}">Войти</a></li>
+            <li><a th:href="@{/users/register}">Регистрация</a></li>
+        </ul>
     </div>
 </div>
 </body>
