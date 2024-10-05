@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: ru.job4j.cinema.repository.Sql2oUserRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.654 s <<< FAILURE! - in ru.job4j.cinema.repository.Sql2oUserRepositoryTest
+whenSaveSeveralThenGetAll  Time elapsed: 0.009 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at ru.job4j.cinema.repository.Sql2oUserRepositoryTest.whenSaveSeveralThenGetAll(Sql2oUserRepositoryTest.java:54)
+
+whenSaveThenGetSame  Time elapsed: 0.002 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at ru.job4j.cinema.repository.Sql2oUserRepositoryTest.whenSaveThenGetSame(Sql2oUserRepositoryTest.java:45)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: ru.job4j.cinema.repository.FilmRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.061 s <<< FAILURE! - in ru.job4j.cinema.repository.FilmRepositoryTest
+ru.job4j.cinema.repository.FilmRepositoryTest  Time elapsed: 0.061 s  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - Cannot create JDBC driver of class '' for connect URL 'null'
+	at ru.job4j.cinema.repository.FilmRepositoryTest.initRepository(FilmRepositoryTest.java:39)
+Caused by: java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null'
+	at ru.job4j.cinema.repository.FilmRepositoryTest.initRepository(FilmRepositoryTest.java:39)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.indexOf(int)" because "url" is null
+	at ru.job4j.cinema.repository.FilmRepositoryTest.initRepository(FilmRepositoryTest.java:39)
+

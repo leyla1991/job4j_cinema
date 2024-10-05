@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.42">
+<file name="C:\Users\atagl\project\job4j_cinema\src\main\java\ru\job4j\cinema\model\Film.java">
+<error line="39" column="12" severity="error" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="C:\Users\atagl\project\job4j_cinema\src\main\java\ru\job4j\cinema\repository\Sql2oTicketRepository.java">
+</file>
+<file name="C:\Users\atagl\project\job4j_cinema\src\main\java\ru\job4j\cinema\service\SimpleFilmService.java">
+</file>
+<file name="C:\Users\atagl\project\job4j_cinema\src\main\java\ru\job4j\cinema\service\SimpleFilmSessionService.java">
+</file>
+<file name="C:\Users\atagl\project\job4j_cinema\src\main\java\ru\job4j\cinema\service\SimpleTicketService.java">
+</file>
+</checkstyle>
