@@ -34,14 +34,18 @@ public class Sql2oFilmRepositoryTest {
 
     @Test
     public void whenShowAllFilms() {
-        var film1 =  new Film(1, "Джава и ее друзья", "Базы данных встречают Джаву и Спринг",
+        var film1 =  new Film("Джава и ее друзья", "Базы данных встречают Джаву и Спринг",
                 2023, 3, 5, 180, 3);
-        var film2 = new Film(2, "Джавист встретил Хелоу ворлд", "Драматическая история",
+        var film2 = new Film("Джавист встретил Хелоу ворлд", "Драматическая история",
                 2023, 3, 18, 180, 3);
-        var film3 = new Film(3, "Джавист и его первая работа", "Ужасы статиста",
+        var film3 = new Film("Джавист и его первая работа", "Ужасы статиста",
                 2023, 4, 18, 180, 2);
-        var film4 = new Film(4, "Джавист на пути Мидла", "Ужасы статиста",
+        var film4 = new Film("Джавист на пути Мидла", "Ужасы статиста",
                 2023, 4, 18, 180, 2);
+        film1.setId(1);
+        film2.setId(2);
+        film3.setId(3);
+        film4.setId(4);
         var result = sql2oFilmRepository.findAll();
 
         assertThat(result).isEqualTo(List.of(film1, film2, film3, film4));
@@ -49,8 +53,9 @@ public class Sql2oFilmRepositoryTest {
 
     @Test
     public void whenFindOneFilm() {
-        var filmExpected =  new Film(1, "Джава и ее друзья", "Базы данных встречают Джаву и Спринг",
+        var filmExpected =  new Film("Джава и ее друзья", "Базы данных встречают Джаву и Спринг",
                 2023, 3, 5, 180, 8);
+        filmExpected.setId(1);
         var actual = sql2oFilmRepository.findById(1);
         assertThat(actual).isEqualTo(Optional.of(filmExpected));
         }

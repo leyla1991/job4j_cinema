@@ -36,9 +36,8 @@ public class Film {
     }
 
     @SuppressWarnings("checkstyle:ParameterNumber")
-    public Film(int id, String name, String description, int year,
+    public Film(String name, String description, int year,
                 int minimalAge, int durationInMinutes, int genreId, int fileId) {
-        this.id = id;
         this.name = name;
         this.description = description;
         this.year = year;
