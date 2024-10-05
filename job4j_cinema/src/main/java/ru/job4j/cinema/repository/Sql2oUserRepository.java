@@ -33,6 +33,7 @@ public class Sql2oUserRepository implements UserRepository {
                     .addParameter("password", user.getPassword());
             int generatedId = query.executeUpdate().getKey(Integer.class);
             user.setId(generatedId);
+            return Optional.of(user);
         } catch (Sql2oException e) {
             LOGGER.error("Error saving users: {}", e.getMessage(), e);
         }

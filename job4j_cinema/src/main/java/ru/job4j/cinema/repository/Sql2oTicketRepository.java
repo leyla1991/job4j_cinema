@@ -35,7 +35,7 @@ public class Sql2oTicketRepository implements TicketRepository {
             ticket.setId(generatedId);
             return Optional.of(ticket);
         } catch (Exception e) {
-            LOGGER.error("IOException in save() method Sql2oTicketRepository.class");
+            LOGGER.error(e.getMessage());
         }
         return Optional.empty();
     }
@@ -77,7 +77,6 @@ public class Sql2oTicketRepository implements TicketRepository {
                     .executeAndFetch(Ticket.class);
             return ticket;
         }
-
     }
 
     @Override
