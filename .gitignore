@@ -1,0 +1,4 @@
+.idea
+*.iml
+job4j_cinema/target
+*.db
