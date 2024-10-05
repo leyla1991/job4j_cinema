@@ -1,11 +1,9 @@
-package repository;
+package ru.job4j.cinema.repository;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import ru.job4j.cinema.configuration.DatasourceConfiguration;
-import ru.job4j.cinema.model.File;
 import ru.job4j.cinema.model.Film;
-import ru.job4j.cinema.repository.Sql2oFilmRepository;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 import java.util.List;
@@ -15,8 +13,6 @@ import java.util.Properties;
 public class Sql2oFilmRepositoryTest {
 
     private static Sql2oFilmRepository sql2oFilmRepository;
-
-    private static File file;
 
     @BeforeAll
     public static void init() throws Exception {

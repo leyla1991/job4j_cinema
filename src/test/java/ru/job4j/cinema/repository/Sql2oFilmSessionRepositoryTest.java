@@ -1,10 +1,9 @@
-package repository;
+package ru.job4j.cinema.repository;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import ru.job4j.cinema.configuration.DatasourceConfiguration;
 import ru.job4j.cinema.model.FilmSession;
-import ru.job4j.cinema.repository.Sql2oFilmSessionRepository;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
