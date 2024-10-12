@@ -2,18 +2,15 @@ package ru.job4j.cinema.controller;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.ui.ConcurrentModel;
 import ru.job4j.cinema.dto.FilmDTO;
 import ru.job4j.cinema.dto.FilmSessionDTO;
 import ru.job4j.cinema.model.Halls;
-import ru.job4j.cinema.model.Ticket;
-import ru.job4j.cinema.service.filmSession.FilmSessionService;
+import ru.job4j.cinema.service.schedules.FilmSessionService;
 import ru.job4j.cinema.service.ticket.TicketService;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.mockito.Mockito.*;

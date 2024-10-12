@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.job4j.cinema.model.Ticket;
 import ru.job4j.cinema.model.User;
-import ru.job4j.cinema.service.filmSession.FilmSessionService;
+import ru.job4j.cinema.service.schedules.FilmSessionService;
 import ru.job4j.cinema.service.ticket.TicketService;
 
 import javax.servlet.http.HttpServletRequest;

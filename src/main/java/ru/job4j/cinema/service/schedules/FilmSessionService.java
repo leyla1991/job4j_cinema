@@ -1,4 +1,4 @@
-package ru.job4j.cinema.service.filmSession;
+package ru.job4j.cinema.service.schedules;
 
 import ru.job4j.cinema.dto.FilmSessionDTO;
 import java.util.Collection;

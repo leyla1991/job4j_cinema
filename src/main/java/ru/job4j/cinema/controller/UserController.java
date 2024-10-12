@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.job4j.cinema.dto.FilmSessionDTO;
 import ru.job4j.cinema.model.Ticket;
 import ru.job4j.cinema.model.User;
-import ru.job4j.cinema.service.filmSession.FilmSessionService;
+import ru.job4j.cinema.service.schedules.FilmSessionService;
 import ru.job4j.cinema.service.ticket.TicketService;
 import ru.job4j.cinema.service.user.UserService;
 import javax.servlet.http.HttpServletRequest;

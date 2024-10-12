@@ -4,11 +4,9 @@ import net.jcip.annotations.ThreadSafe;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ru.job4j.cinema.model.Ticket;
 import ru.job4j.cinema.model.User;
-import ru.job4j.cinema.service.filmSession.FilmSessionService;
-import ru.job4j.cinema.service.ticket.TicketService;
-import javax.servlet.http.HttpServletRequest;
+import ru.job4j.cinema.service.schedules.FilmSessionService;
+
 import javax.servlet.http.HttpSession;
 
 @Controller

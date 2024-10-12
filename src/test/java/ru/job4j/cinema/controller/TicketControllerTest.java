@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.ui.ConcurrentModel;
 import ru.job4j.cinema.model.Ticket;
-import ru.job4j.cinema.service.filmSession.FilmSessionService;
+import ru.job4j.cinema.service.schedules.FilmSessionService;
 import ru.job4j.cinema.service.ticket.TicketService;
 
 import java.util.Optional;
