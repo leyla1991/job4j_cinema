@@ -58,7 +58,7 @@ class TicketControllerTest {
 
         when(ticketController.buyTicket(ticket2, model, request)).thenThrow(expectedException);
 
-        assertThat(view).isEqualTo("errors/404");
+        assertThat(view).isEqualTo("errors/409");
         assertThat(actualException).isEqualTo(expectedException.getMessage());
     }
 
