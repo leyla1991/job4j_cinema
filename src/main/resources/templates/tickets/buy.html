@@ -15,7 +15,7 @@
 <div class="container-fluid p-0">
     <header th:insert="blocks/header :: header"></header>
     <div class="container">
-        <form class="mt-3" th:action="@{/schedules/buy}" method="post" enctype="multipart/form-data">
+        <form class="mt-3" th:action="@{/tickets/buy}" method="post" enctype="multipart/form-data">
             <input type="hidden" id="sessionId" name="sessionId" th:value="${schedule.id}">
             <input type="hidden" id="userId" name="userId" th:value='${user.id}'>
             <div class="mb-3">

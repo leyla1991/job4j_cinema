@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.*;
 import ru.job4j.cinema.dto.FilmSessionDTO;
 import ru.job4j.cinema.model.Ticket;
 import ru.job4j.cinema.model.User;
-import ru.job4j.cinema.service.FilmSessionService;
-import ru.job4j.cinema.service.TicketService;
-import ru.job4j.cinema.service.UserService;
+import ru.job4j.cinema.service.filmSession.FilmSessionService;
+import ru.job4j.cinema.service.ticket.TicketService;
+import ru.job4j.cinema.service.user.UserService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
@@ -38,9 +38,8 @@ public class UserController {
     public String register(Model model, @ModelAttribute User user) {
         var savedUser = userService.save(user);
         if (savedUser.isEmpty()) {
-            user.setFullName("Гость");
             model.addAttribute("message", "Пользователь с такой почтой уже существует");
-            return "errors/404";
+            return "users/register";
         }
         return "redirect:/users/login";
     }

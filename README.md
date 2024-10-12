@@ -48,16 +48,20 @@ _js_
 
 ### Порядок запуска приложения
 
-1. '''create database cinema;'''
+1. ``` shell
+   create database cinema;
+   ```
 
 
-2. '''run liquibase:update'''
+2. ``` shell 
+   liquibase:update
+    ```
 
-
-3. '''run Main.java'''
-
-
-4. '''запустить http://localhost:8080'''
+3. ```shell
+    Main.java
+    ```
+ 
+http://localhost:8080
 
 ### Скриншоты страниц
 

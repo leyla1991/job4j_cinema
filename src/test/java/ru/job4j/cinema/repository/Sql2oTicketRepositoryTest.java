@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import ru.job4j.cinema.configuration.DatasourceConfiguration;
 import ru.job4j.cinema.model.Ticket;
 import ru.job4j.cinema.model.User;
+import ru.job4j.cinema.repository.ticket.Sql2oTicketRepository;
 
 import java.util.List;
 import java.util.Optional;

@@ -4,6 +4,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import ru.job4j.cinema.configuration.DatasourceConfiguration;
 import ru.job4j.cinema.model.Film;
+import ru.job4j.cinema.repository.film.Sql2oFilmRepository;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 import java.util.List;

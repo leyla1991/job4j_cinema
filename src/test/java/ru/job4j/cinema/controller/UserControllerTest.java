@@ -6,9 +6,9 @@ import org.mockito.ArgumentCaptor;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.ui.ConcurrentModel;
 import ru.job4j.cinema.model.User;
-import ru.job4j.cinema.service.FilmSessionService;
-import ru.job4j.cinema.service.TicketService;
-import ru.job4j.cinema.service.UserService;
+import ru.job4j.cinema.service.filmSession.FilmSessionService;
+import ru.job4j.cinema.service.ticket.TicketService;
+import ru.job4j.cinema.service.user.UserService;
 
 import java.util.List;
 import java.util.Optional;
