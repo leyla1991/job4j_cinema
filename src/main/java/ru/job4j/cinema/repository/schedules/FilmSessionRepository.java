@@ -1,4 +1,4 @@
-package ru.job4j.cinema.repository.filmSession;
+package ru.job4j.cinema.repository.schedules;
 
 import ru.job4j.cinema.model.FilmSession;
 

@@ -5,7 +5,7 @@ import ru.job4j.cinema.dto.FilmDTO;
 import ru.job4j.cinema.dto.FilmSessionDTO;
 import ru.job4j.cinema.model.FilmSession;
 import ru.job4j.cinema.model.Halls;
-import ru.job4j.cinema.repository.filmSession.FilmSessionRepository;
+import ru.job4j.cinema.repository.schedules.FilmSessionRepository;
 import ru.job4j.cinema.service.film.FilmService;
 import ru.job4j.cinema.service.halls.HallsService;
 
